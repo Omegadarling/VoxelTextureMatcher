@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/images/icon.webp" width="144" alt="Voxel Texture Optimizer app icon">
+</p>
+
 # Voxel Texture Optimizer
 
 A Blender 4.0+ add-on that rebakes a voxel or retopologized mesh's texture down to **one pixel per face**, then rewrites the UVs to match.
