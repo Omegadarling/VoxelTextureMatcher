@@ -1,6 +1,14 @@
+<p align="center">
+  <img src="docs/images/icon.webp" width="144" alt="Voxel Texture Optimizer app icon">
+</p>
+
 # Voxel Texture Optimizer
 
 A Blender 4.0+ add-on that rebakes a voxel or retopologized mesh's texture down to **one pixel per face**, then rewrites the UVs to match.
+
+![Voxel Texture Optimizer compresses a large source atlas into one pixel per face while preserving the voxel model's appearance](docs/images/voxel-texture-optimizer.png)
+
+*The visible model stays the same while the texture atlas collapses to the minimum color data needed by its faces.*
 
 Voxel models exported from tools like MagicaVoxel often carry a texture far larger than they need — every face is a flat color, but it's sampled from a big atlas. This add-on samples the color at each face's UV center, packs those colors into the smallest square texture that fits, and remaps every face to its own single pixel.
 
