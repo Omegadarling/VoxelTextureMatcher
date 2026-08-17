@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="docs/images/icon.webp" width="176" alt="Voxel Texture Optimizer app icon">
+  <img src="https://raw.githubusercontent.com/Omegadarling/VoxelTextureMatcher/main/docs/images/icon.webp" width="176" alt="Voxel Texture Optimizer app icon">
 </p>
 
 # Voxel Texture Optimizer
 
 A Blender 4.0+ add-on that rebakes a voxel or retopologized mesh's texture down to **one pixel per face**, then rewrites the UVs to match.
 
-![Voxel Texture Optimizer compresses a large source atlas into one pixel per face while preserving the voxel model's appearance](docs/images/voxel-texture-optimizer.png)
+![Voxel Texture Optimizer compresses a large source atlas into one pixel per face while preserving the voxel model's appearance](https://raw.githubusercontent.com/Omegadarling/VoxelTextureMatcher/main/docs/images/voxel-texture-optimizer.png)
 
 *The visible model stays the same while the texture atlas collapses to the minimum color data needed by its faces.*
 
 ## Actual add-on in Blender
 
-![Blender 5.1 showing a colorful optimized mesh and the Voxel Texture Optimizer sidebar reporting its 320 faces, OptimizedUV layer, and new 18 by 18 texture](docs/images/blender-screenshot.png)
+![Blender 5.1 showing a colorful optimized mesh and the Voxel Texture Optimizer sidebar reporting its 320 faces, OptimizedUV layer, and new 18 by 18 texture](https://raw.githubusercontent.com/Omegadarling/VoxelTextureMatcher/main/docs/images/blender-screenshot.png)
 
 *Actual Blender capture after running the add-on in Minimal mode: the sidebar identifies the generated `OptimizedUV` layer and the 18×18 one-pixel-per-face texture.*
 
