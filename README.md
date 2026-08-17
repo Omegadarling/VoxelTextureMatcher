@@ -12,9 +12,9 @@ A Blender 4.0+ add-on that rebakes a voxel or retopologized mesh's texture down 
 
 ## Actual add-on in Blender
 
-![Blender 5.1 showing a colorful optimized mesh and the Voxel Texture Optimizer sidebar reporting its 320 faces, OptimizedUV layer, and new 18 by 18 texture](https://raw.githubusercontent.com/Omegadarling/VoxelTextureMatcher/main/docs/images/blender-screenshot.png)
+![Blender 5.1 comparing the original 256 by 256 source atlas with the generated 18 by 18 one-pixel-per-face texture above the remapped model](https://raw.githubusercontent.com/Omegadarling/VoxelTextureMatcher/main/docs/images/blender-screenshot.png?v=2)
 
-*Actual Blender capture after running the add-on in Minimal mode: the sidebar identifies the generated `OptimizedUV` layer and the 18×18 one-pixel-per-face texture.*
+*Actual Blender capture after running Minimal mode. The flat Image Editors show the 256×256 source atlas on the left and the generated 18×18 texture on the right; below them, the model keeps its sampled face colors through the new `OptimizedUV` layer.*
 
 Voxel models exported from tools like MagicaVoxel often carry a texture far larger than they need — every face is a flat color, but it's sampled from a big atlas. This add-on samples the color at each face's UV center, packs those colors into the smallest square texture that fits, and remaps every face to its own single pixel.
 
